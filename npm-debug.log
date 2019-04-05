@@ -1,0 +1,751 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 warn package.json canvas-game-template@1.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/mnt/c/Projects/cgihackaton',
+6 verbose install   [ '@babel/core',
+6 verbose install     '@babel/polyfill',
+6 verbose install     '@babel/preset-env',
+6 verbose install     '@babel/preset-es2017',
+6 verbose install     '@babel/preset-stage-3',
+6 verbose install     '@babel/preset-typescript',
+6 verbose install     'awesome-typescript-loader',
+6 verbose install     'babel-loader',
+6 verbose install     'browser-sync',
+6 verbose install     'browser-sync-webpack-plugin',
+6 verbose install     'html-webpack-plugin',
+6 verbose install     'raw-loader',
+6 verbose install     'typescript',
+6 verbose install     'webpack' ] ]
+7 info preinstall canvas-game-template@1.0.0
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ '@babel/preset-env@^7.0.0-beta.42', null ]
+10 verbose cache add name=undefined spec="@babel/preset-env@^7.0.0-beta.42" args=["@babel/preset-env@^7.0.0-beta.42",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: '@babel/preset-env@^7.0.0-beta.42',
+11 verbose parsed url   path: '@babel/preset-env@^7.0.0-beta.42',
+11 verbose parsed url   href: '@babel/preset-env@^7.0.0-beta.42' }
+12 verbose cache add name="" spec="babel/preset-env@^7.0.0-beta.42" args=["","babel/preset-env@^7.0.0-beta.42"]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'babel/preset-env@^7.0.0-beta.42',
+13 verbose parsed url   path: 'babel/preset-env@^7.0.0-beta.42',
+13 verbose parsed url   href: 'babel/preset-env@^7.0.0-beta.42' }
+14 verbose cache add name="babel/preset-env" spec="^7.0.0-beta.42" args=["babel/preset-env","^7.0.0-beta.42"]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: '^7.0.0-beta.42',
+15 verbose parsed url   path: '^7.0.0-beta.42',
+15 verbose parsed url   href: '^7.0.0-beta.42' }
+16 verbose addNamed [ 'babel/preset-env', '^7.0.0-beta.42' ]
+17 verbose addNamed [ null, '>=7.0.0-beta.42 <8.0.0-0' ]
+18 verbose cache add [ '@babel/core@^7.0.0-beta.42', null ]
+19 verbose cache add name=undefined spec="@babel/core@^7.0.0-beta.42" args=["@babel/core@^7.0.0-beta.42",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '@babel/core@^7.0.0-beta.42',
+20 verbose parsed url   path: '@babel/core@^7.0.0-beta.42',
+20 verbose parsed url   href: '@babel/core@^7.0.0-beta.42' }
+21 verbose cache add name="" spec="babel/core@^7.0.0-beta.42" args=["","babel/core@^7.0.0-beta.42"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'babel/core@^7.0.0-beta.42',
+22 verbose parsed url   path: 'babel/core@^7.0.0-beta.42',
+22 verbose parsed url   href: 'babel/core@^7.0.0-beta.42' }
+23 verbose cache add name="babel/core" spec="^7.0.0-beta.42" args=["babel/core","^7.0.0-beta.42"]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: '^7.0.0-beta.42',
+24 verbose parsed url   path: '^7.0.0-beta.42',
+24 verbose parsed url   href: '^7.0.0-beta.42' }
+25 verbose addNamed [ 'babel/core', '^7.0.0-beta.42' ]
+26 verbose addNamed [ null, '>=7.0.0-beta.42 <8.0.0-0' ]
+27 verbose cache add [ '@babel/polyfill@^7.0.0-beta.42', null ]
+28 verbose cache add name=undefined spec="@babel/polyfill@^7.0.0-beta.42" args=["@babel/polyfill@^7.0.0-beta.42",null]
+29 verbose parsed url { protocol: null,
+29 verbose parsed url   slashes: null,
+29 verbose parsed url   auth: null,
+29 verbose parsed url   host: null,
+29 verbose parsed url   port: null,
+29 verbose parsed url   hostname: null,
+29 verbose parsed url   hash: null,
+29 verbose parsed url   search: null,
+29 verbose parsed url   query: null,
+29 verbose parsed url   pathname: '@babel/polyfill@^7.0.0-beta.42',
+29 verbose parsed url   path: '@babel/polyfill@^7.0.0-beta.42',
+29 verbose parsed url   href: '@babel/polyfill@^7.0.0-beta.42' }
+30 verbose cache add name="" spec="babel/polyfill@^7.0.0-beta.42" args=["","babel/polyfill@^7.0.0-beta.42"]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: 'babel/polyfill@^7.0.0-beta.42',
+31 verbose parsed url   path: 'babel/polyfill@^7.0.0-beta.42',
+31 verbose parsed url   href: 'babel/polyfill@^7.0.0-beta.42' }
+32 verbose cache add name="babel/polyfill" spec="^7.0.0-beta.42" args=["babel/polyfill","^7.0.0-beta.42"]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: '^7.0.0-beta.42',
+33 verbose parsed url   path: '^7.0.0-beta.42',
+33 verbose parsed url   href: '^7.0.0-beta.42' }
+34 verbose addNamed [ 'babel/polyfill', '^7.0.0-beta.42' ]
+35 verbose addNamed [ null, '>=7.0.0-beta.42 <8.0.0-0' ]
+36 verbose cache add [ '@babel/preset-es2017@^7.0.0-beta.42', null ]
+37 verbose cache add name=undefined spec="@babel/preset-es2017@^7.0.0-beta.42" args=["@babel/preset-es2017@^7.0.0-beta.42",null]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: null,
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: '@babel/preset-es2017@^7.0.0-beta.42',
+38 verbose parsed url   path: '@babel/preset-es2017@^7.0.0-beta.42',
+38 verbose parsed url   href: '@babel/preset-es2017@^7.0.0-beta.42' }
+39 verbose cache add name="" spec="babel/preset-es2017@^7.0.0-beta.42" args=["","babel/preset-es2017@^7.0.0-beta.42"]
+40 verbose parsed url { protocol: null,
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: 'babel/preset-es2017@^7.0.0-beta.42',
+40 verbose parsed url   path: 'babel/preset-es2017@^7.0.0-beta.42',
+40 verbose parsed url   href: 'babel/preset-es2017@^7.0.0-beta.42' }
+41 verbose cache add name="babel/preset-es2017" spec="^7.0.0-beta.42" args=["babel/preset-es2017","^7.0.0-beta.42"]
+42 verbose parsed url { protocol: null,
+42 verbose parsed url   slashes: null,
+42 verbose parsed url   auth: null,
+42 verbose parsed url   host: null,
+42 verbose parsed url   port: null,
+42 verbose parsed url   hostname: null,
+42 verbose parsed url   hash: null,
+42 verbose parsed url   search: null,
+42 verbose parsed url   query: null,
+42 verbose parsed url   pathname: '^7.0.0-beta.42',
+42 verbose parsed url   path: '^7.0.0-beta.42',
+42 verbose parsed url   href: '^7.0.0-beta.42' }
+43 verbose addNamed [ 'babel/preset-es2017', '^7.0.0-beta.42' ]
+44 verbose addNamed [ null, '>=7.0.0-beta.42 <8.0.0-0' ]
+45 verbose cache add [ '@babel/preset-stage-3@^7.0.0-beta.42', null ]
+46 verbose cache add name=undefined spec="@babel/preset-stage-3@^7.0.0-beta.42" args=["@babel/preset-stage-3@^7.0.0-beta.42",null]
+47 verbose parsed url { protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: '@babel/preset-stage-3@^7.0.0-beta.42',
+47 verbose parsed url   path: '@babel/preset-stage-3@^7.0.0-beta.42',
+47 verbose parsed url   href: '@babel/preset-stage-3@^7.0.0-beta.42' }
+48 verbose cache add name="" spec="babel/preset-stage-3@^7.0.0-beta.42" args=["","babel/preset-stage-3@^7.0.0-beta.42"]
+49 verbose parsed url { protocol: null,
+49 verbose parsed url   slashes: null,
+49 verbose parsed url   auth: null,
+49 verbose parsed url   host: null,
+49 verbose parsed url   port: null,
+49 verbose parsed url   hostname: null,
+49 verbose parsed url   hash: null,
+49 verbose parsed url   search: null,
+49 verbose parsed url   query: null,
+49 verbose parsed url   pathname: 'babel/preset-stage-3@^7.0.0-beta.42',
+49 verbose parsed url   path: 'babel/preset-stage-3@^7.0.0-beta.42',
+49 verbose parsed url   href: 'babel/preset-stage-3@^7.0.0-beta.42' }
+50 verbose cache add name="babel/preset-stage-3" spec="^7.0.0-beta.42" args=["babel/preset-stage-3","^7.0.0-beta.42"]
+51 verbose parsed url { protocol: null,
+51 verbose parsed url   slashes: null,
+51 verbose parsed url   auth: null,
+51 verbose parsed url   host: null,
+51 verbose parsed url   port: null,
+51 verbose parsed url   hostname: null,
+51 verbose parsed url   hash: null,
+51 verbose parsed url   search: null,
+51 verbose parsed url   query: null,
+51 verbose parsed url   pathname: '^7.0.0-beta.42',
+51 verbose parsed url   path: '^7.0.0-beta.42',
+51 verbose parsed url   href: '^7.0.0-beta.42' }
+52 verbose addNamed [ 'babel/preset-stage-3', '^7.0.0-beta.42' ]
+53 verbose addNamed [ null, '>=7.0.0-beta.42 <8.0.0-0' ]
+54 silly lockFile 5a579bb1-bel-preset-stage-3-7-0-0-beta-42 babel/preset-stage-3@^7.0.0-beta.42
+55 verbose lock babel/preset-stage-3@^7.0.0-beta.42 /home/pontus/.npm/5a579bb1-bel-preset-stage-3-7-0-0-beta-42.lock
+56 verbose cache add [ '@babel/preset-typescript@^7.0.0-beta.42', null ]
+57 verbose cache add name=undefined spec="@babel/preset-typescript@^7.0.0-beta.42" args=["@babel/preset-typescript@^7.0.0-beta.42",null]
+58 verbose parsed url { protocol: null,
+58 verbose parsed url   slashes: null,
+58 verbose parsed url   auth: null,
+58 verbose parsed url   host: null,
+58 verbose parsed url   port: null,
+58 verbose parsed url   hostname: null,
+58 verbose parsed url   hash: null,
+58 verbose parsed url   search: null,
+58 verbose parsed url   query: null,
+58 verbose parsed url   pathname: '@babel/preset-typescript@^7.0.0-beta.42',
+58 verbose parsed url   path: '@babel/preset-typescript@^7.0.0-beta.42',
+58 verbose parsed url   href: '@babel/preset-typescript@^7.0.0-beta.42' }
+59 verbose cache add name="" spec="babel/preset-typescript@^7.0.0-beta.42" args=["","babel/preset-typescript@^7.0.0-beta.42"]
+60 verbose parsed url { protocol: null,
+60 verbose parsed url   slashes: null,
+60 verbose parsed url   auth: null,
+60 verbose parsed url   host: null,
+60 verbose parsed url   port: null,
+60 verbose parsed url   hostname: null,
+60 verbose parsed url   hash: null,
+60 verbose parsed url   search: null,
+60 verbose parsed url   query: null,
+60 verbose parsed url   pathname: 'babel/preset-typescript@^7.0.0-beta.42',
+60 verbose parsed url   path: 'babel/preset-typescript@^7.0.0-beta.42',
+60 verbose parsed url   href: 'babel/preset-typescript@^7.0.0-beta.42' }
+61 verbose cache add name="babel/preset-typescript" spec="^7.0.0-beta.42" args=["babel/preset-typescript","^7.0.0-beta.42"]
+62 verbose parsed url { protocol: null,
+62 verbose parsed url   slashes: null,
+62 verbose parsed url   auth: null,
+62 verbose parsed url   host: null,
+62 verbose parsed url   port: null,
+62 verbose parsed url   hostname: null,
+62 verbose parsed url   hash: null,
+62 verbose parsed url   search: null,
+62 verbose parsed url   query: null,
+62 verbose parsed url   pathname: '^7.0.0-beta.42',
+62 verbose parsed url   path: '^7.0.0-beta.42',
+62 verbose parsed url   href: '^7.0.0-beta.42' }
+63 verbose addNamed [ 'babel/preset-typescript', '^7.0.0-beta.42' ]
+64 verbose addNamed [ null, '>=7.0.0-beta.42 <8.0.0-0' ]
+65 silly lockFile 11a6afb6--preset-typescript-7-0-0-beta-42 babel/preset-typescript@^7.0.0-beta.42
+66 verbose lock babel/preset-typescript@^7.0.0-beta.42 /home/pontus/.npm/11a6afb6--preset-typescript-7-0-0-beta-42.lock
+67 verbose cache add [ 'awesome-typescript-loader@^3.4.1', null ]
+68 verbose cache add name=undefined spec="awesome-typescript-loader@^3.4.1" args=["awesome-typescript-loader@^3.4.1",null]
+69 verbose parsed url { protocol: null,
+69 verbose parsed url   slashes: null,
+69 verbose parsed url   auth: null,
+69 verbose parsed url   host: null,
+69 verbose parsed url   port: null,
+69 verbose parsed url   hostname: null,
+69 verbose parsed url   hash: null,
+69 verbose parsed url   search: null,
+69 verbose parsed url   query: null,
+69 verbose parsed url   pathname: 'awesome-typescript-loader@^3.4.1',
+69 verbose parsed url   path: 'awesome-typescript-loader@^3.4.1',
+69 verbose parsed url   href: 'awesome-typescript-loader@^3.4.1' }
+70 verbose cache add name="awesome-typescript-loader" spec="^3.4.1" args=["awesome-typescript-loader","^3.4.1"]
+71 verbose parsed url { protocol: null,
+71 verbose parsed url   slashes: null,
+71 verbose parsed url   auth: null,
+71 verbose parsed url   host: null,
+71 verbose parsed url   port: null,
+71 verbose parsed url   hostname: null,
+71 verbose parsed url   hash: null,
+71 verbose parsed url   search: null,
+71 verbose parsed url   query: null,
+71 verbose parsed url   pathname: '^3.4.1',
+71 verbose parsed url   path: '^3.4.1',
+71 verbose parsed url   href: '^3.4.1' }
+72 verbose addNamed [ 'awesome-typescript-loader', '^3.4.1' ]
+73 verbose addNamed [ null, '>=3.4.1-0 <4.0.0-0' ]
+74 silly lockFile 813312d2-awesome-typescript-loader-3-4-1 awesome-typescript-loader@^3.4.1
+75 verbose lock awesome-typescript-loader@^3.4.1 /home/pontus/.npm/813312d2-awesome-typescript-loader-3-4-1.lock
+76 verbose cache add [ 'babel-loader@8.0.0-beta.2', null ]
+77 verbose cache add name=undefined spec="babel-loader@8.0.0-beta.2" args=["babel-loader@8.0.0-beta.2",null]
+78 verbose parsed url { protocol: null,
+78 verbose parsed url   slashes: null,
+78 verbose parsed url   auth: null,
+78 verbose parsed url   host: null,
+78 verbose parsed url   port: null,
+78 verbose parsed url   hostname: null,
+78 verbose parsed url   hash: null,
+78 verbose parsed url   search: null,
+78 verbose parsed url   query: null,
+78 verbose parsed url   pathname: 'babel-loader@8.0.0-beta.2',
+78 verbose parsed url   path: 'babel-loader@8.0.0-beta.2',
+78 verbose parsed url   href: 'babel-loader@8.0.0-beta.2' }
+79 verbose cache add name="babel-loader" spec="8.0.0-beta.2" args=["babel-loader","8.0.0-beta.2"]
+80 verbose parsed url { protocol: null,
+80 verbose parsed url   slashes: null,
+80 verbose parsed url   auth: null,
+80 verbose parsed url   host: null,
+80 verbose parsed url   port: null,
+80 verbose parsed url   hostname: null,
+80 verbose parsed url   hash: null,
+80 verbose parsed url   search: null,
+80 verbose parsed url   query: null,
+80 verbose parsed url   pathname: '8.0.0-beta.2',
+80 verbose parsed url   path: '8.0.0-beta.2',
+80 verbose parsed url   href: '8.0.0-beta.2' }
+81 verbose addNamed [ 'babel-loader', '8.0.0-beta.2' ]
+82 verbose addNamed [ '8.0.0-beta.2', '8.0.0-beta.2' ]
+83 silly lockFile e98e0821-babel-loader-8-0-0-beta-2 babel-loader@8.0.0-beta.2
+84 verbose lock babel-loader@8.0.0-beta.2 /home/pontus/.npm/e98e0821-babel-loader-8-0-0-beta-2.lock
+85 verbose cache add [ 'browser-sync@^2.18.13', null ]
+86 verbose cache add name=undefined spec="browser-sync@^2.18.13" args=["browser-sync@^2.18.13",null]
+87 verbose parsed url { protocol: null,
+87 verbose parsed url   slashes: null,
+87 verbose parsed url   auth: null,
+87 verbose parsed url   host: null,
+87 verbose parsed url   port: null,
+87 verbose parsed url   hostname: null,
+87 verbose parsed url   hash: null,
+87 verbose parsed url   search: null,
+87 verbose parsed url   query: null,
+87 verbose parsed url   pathname: 'browser-sync@^2.18.13',
+87 verbose parsed url   path: 'browser-sync@^2.18.13',
+87 verbose parsed url   href: 'browser-sync@^2.18.13' }
+88 verbose cache add name="browser-sync" spec="^2.18.13" args=["browser-sync","^2.18.13"]
+89 verbose parsed url { protocol: null,
+89 verbose parsed url   slashes: null,
+89 verbose parsed url   auth: null,
+89 verbose parsed url   host: null,
+89 verbose parsed url   port: null,
+89 verbose parsed url   hostname: null,
+89 verbose parsed url   hash: null,
+89 verbose parsed url   search: null,
+89 verbose parsed url   query: null,
+89 verbose parsed url   pathname: '^2.18.13',
+89 verbose parsed url   path: '^2.18.13',
+89 verbose parsed url   href: '^2.18.13' }
+90 verbose addNamed [ 'browser-sync', '^2.18.13' ]
+91 verbose addNamed [ null, '>=2.18.13-0 <3.0.0-0' ]
+92 silly lockFile faeb25bf-browser-sync-2-18-13 browser-sync@^2.18.13
+93 verbose lock browser-sync@^2.18.13 /home/pontus/.npm/faeb25bf-browser-sync-2-18-13.lock
+94 verbose cache add [ 'browser-sync-webpack-plugin@^1.2.0', null ]
+95 verbose cache add name=undefined spec="browser-sync-webpack-plugin@^1.2.0" args=["browser-sync-webpack-plugin@^1.2.0",null]
+96 verbose parsed url { protocol: null,
+96 verbose parsed url   slashes: null,
+96 verbose parsed url   auth: null,
+96 verbose parsed url   host: null,
+96 verbose parsed url   port: null,
+96 verbose parsed url   hostname: null,
+96 verbose parsed url   hash: null,
+96 verbose parsed url   search: null,
+96 verbose parsed url   query: null,
+96 verbose parsed url   pathname: 'browser-sync-webpack-plugin@^1.2.0',
+96 verbose parsed url   path: 'browser-sync-webpack-plugin@^1.2.0',
+96 verbose parsed url   href: 'browser-sync-webpack-plugin@^1.2.0' }
+97 verbose cache add name="browser-sync-webpack-plugin" spec="^1.2.0" args=["browser-sync-webpack-plugin","^1.2.0"]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: '^1.2.0',
+98 verbose parsed url   path: '^1.2.0',
+98 verbose parsed url   href: '^1.2.0' }
+99 verbose addNamed [ 'browser-sync-webpack-plugin', '^1.2.0' ]
+100 verbose addNamed [ null, '>=1.2.0-0 <2.0.0-0' ]
+101 silly lockFile 1721f734-rowser-sync-webpack-plugin-1-2-0 browser-sync-webpack-plugin@^1.2.0
+102 verbose lock browser-sync-webpack-plugin@^1.2.0 /home/pontus/.npm/1721f734-rowser-sync-webpack-plugin-1-2-0.lock
+103 verbose cache add [ 'html-webpack-plugin@^2.30.1', null ]
+104 verbose cache add name=undefined spec="html-webpack-plugin@^2.30.1" args=["html-webpack-plugin@^2.30.1",null]
+105 verbose parsed url { protocol: null,
+105 verbose parsed url   slashes: null,
+105 verbose parsed url   auth: null,
+105 verbose parsed url   host: null,
+105 verbose parsed url   port: null,
+105 verbose parsed url   hostname: null,
+105 verbose parsed url   hash: null,
+105 verbose parsed url   search: null,
+105 verbose parsed url   query: null,
+105 verbose parsed url   pathname: 'html-webpack-plugin@^2.30.1',
+105 verbose parsed url   path: 'html-webpack-plugin@^2.30.1',
+105 verbose parsed url   href: 'html-webpack-plugin@^2.30.1' }
+106 verbose cache add name="html-webpack-plugin" spec="^2.30.1" args=["html-webpack-plugin","^2.30.1"]
+107 verbose parsed url { protocol: null,
+107 verbose parsed url   slashes: null,
+107 verbose parsed url   auth: null,
+107 verbose parsed url   host: null,
+107 verbose parsed url   port: null,
+107 verbose parsed url   hostname: null,
+107 verbose parsed url   hash: null,
+107 verbose parsed url   search: null,
+107 verbose parsed url   query: null,
+107 verbose parsed url   pathname: '^2.30.1',
+107 verbose parsed url   path: '^2.30.1',
+107 verbose parsed url   href: '^2.30.1' }
+108 verbose addNamed [ 'html-webpack-plugin', '^2.30.1' ]
+109 verbose addNamed [ null, '>=2.30.1-0 <3.0.0-0' ]
+110 silly lockFile 0d9bd61d-html-webpack-plugin-2-30-1 html-webpack-plugin@^2.30.1
+111 verbose lock html-webpack-plugin@^2.30.1 /home/pontus/.npm/0d9bd61d-html-webpack-plugin-2-30-1.lock
+112 verbose cache add [ 'raw-loader@^0.5.1', null ]
+113 verbose cache add name=undefined spec="raw-loader@^0.5.1" args=["raw-loader@^0.5.1",null]
+114 verbose parsed url { protocol: null,
+114 verbose parsed url   slashes: null,
+114 verbose parsed url   auth: null,
+114 verbose parsed url   host: null,
+114 verbose parsed url   port: null,
+114 verbose parsed url   hostname: null,
+114 verbose parsed url   hash: null,
+114 verbose parsed url   search: null,
+114 verbose parsed url   query: null,
+114 verbose parsed url   pathname: 'raw-loader@^0.5.1',
+114 verbose parsed url   path: 'raw-loader@^0.5.1',
+114 verbose parsed url   href: 'raw-loader@^0.5.1' }
+115 verbose cache add name="raw-loader" spec="^0.5.1" args=["raw-loader","^0.5.1"]
+116 verbose parsed url { protocol: null,
+116 verbose parsed url   slashes: null,
+116 verbose parsed url   auth: null,
+116 verbose parsed url   host: null,
+116 verbose parsed url   port: null,
+116 verbose parsed url   hostname: null,
+116 verbose parsed url   hash: null,
+116 verbose parsed url   search: null,
+116 verbose parsed url   query: null,
+116 verbose parsed url   pathname: '^0.5.1',
+116 verbose parsed url   path: '^0.5.1',
+116 verbose parsed url   href: '^0.5.1' }
+117 verbose addNamed [ 'raw-loader', '^0.5.1' ]
+118 verbose addNamed [ null, '>=0.5.1-0 <0.6.0-0' ]
+119 silly lockFile 251a4957-raw-loader-0-5-1 raw-loader@^0.5.1
+120 verbose lock raw-loader@^0.5.1 /home/pontus/.npm/251a4957-raw-loader-0-5-1.lock
+121 verbose cache add [ 'typescript@^2.7.2', null ]
+122 verbose cache add name=undefined spec="typescript@^2.7.2" args=["typescript@^2.7.2",null]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: 'typescript@^2.7.2',
+123 verbose parsed url   path: 'typescript@^2.7.2',
+123 verbose parsed url   href: 'typescript@^2.7.2' }
+124 verbose cache add name="typescript" spec="^2.7.2" args=["typescript","^2.7.2"]
+125 verbose parsed url { protocol: null,
+125 verbose parsed url   slashes: null,
+125 verbose parsed url   auth: null,
+125 verbose parsed url   host: null,
+125 verbose parsed url   port: null,
+125 verbose parsed url   hostname: null,
+125 verbose parsed url   hash: null,
+125 verbose parsed url   search: null,
+125 verbose parsed url   query: null,
+125 verbose parsed url   pathname: '^2.7.2',
+125 verbose parsed url   path: '^2.7.2',
+125 verbose parsed url   href: '^2.7.2' }
+126 verbose addNamed [ 'typescript', '^2.7.2' ]
+127 verbose addNamed [ null, '>=2.7.2-0 <3.0.0-0' ]
+128 silly lockFile 6cd66dd5-typescript-2-7-2 typescript@^2.7.2
+129 verbose lock typescript@^2.7.2 /home/pontus/.npm/6cd66dd5-typescript-2-7-2.lock
+130 verbose cache add [ 'webpack@3.11.0', null ]
+131 verbose cache add name=undefined spec="webpack@3.11.0" args=["webpack@3.11.0",null]
+132 verbose parsed url { protocol: null,
+132 verbose parsed url   slashes: null,
+132 verbose parsed url   auth: null,
+132 verbose parsed url   host: null,
+132 verbose parsed url   port: null,
+132 verbose parsed url   hostname: null,
+132 verbose parsed url   hash: null,
+132 verbose parsed url   search: null,
+132 verbose parsed url   query: null,
+132 verbose parsed url   pathname: 'webpack@3.11.0',
+132 verbose parsed url   path: 'webpack@3.11.0',
+132 verbose parsed url   href: 'webpack@3.11.0' }
+133 verbose cache add name="webpack" spec="3.11.0" args=["webpack","3.11.0"]
+134 verbose parsed url { protocol: null,
+134 verbose parsed url   slashes: null,
+134 verbose parsed url   auth: null,
+134 verbose parsed url   host: null,
+134 verbose parsed url   port: null,
+134 verbose parsed url   hostname: null,
+134 verbose parsed url   hash: null,
+134 verbose parsed url   search: null,
+134 verbose parsed url   query: null,
+134 verbose parsed url   pathname: '3.11.0',
+134 verbose parsed url   path: '3.11.0',
+134 verbose parsed url   href: '3.11.0' }
+135 verbose addNamed [ 'webpack', '3.11.0' ]
+136 verbose addNamed [ '3.11.0', '3.11.0' ]
+137 silly lockFile bd5d6dbe-webpack-3-11-0 webpack@3.11.0
+138 verbose lock webpack@3.11.0 /home/pontus/.npm/bd5d6dbe-webpack-3-11-0.lock
+139 silly lockFile 57605853-babel-core-7-0-0-beta-42 babel/core@^7.0.0-beta.42
+140 verbose lock babel/core@^7.0.0-beta.42 /home/pontus/.npm/57605853-babel-core-7-0-0-beta-42.lock
+141 silly lockFile d62f0eaf-babel-polyfill-7-0-0-beta-42 babel/polyfill@^7.0.0-beta.42
+142 verbose lock babel/polyfill@^7.0.0-beta.42 /home/pontus/.npm/d62f0eaf-babel-polyfill-7-0-0-beta-42.lock
+143 silly addNameRange { name: 'babel/preset-stage-3',
+143 silly addNameRange   range: '>=7.0.0-beta.42 <8.0.0-0',
+143 silly addNameRange   hasData: false }
+144 silly addNameRange { name: 'babel/preset-typescript',
+144 silly addNameRange   range: '>=7.0.0-beta.42 <8.0.0-0',
+144 silly addNameRange   hasData: false }
+145 silly addNameRange { name: 'browser-sync',
+145 silly addNameRange   range: '>=2.18.13-0 <3.0.0-0',
+145 silly addNameRange   hasData: false }
+146 silly addNameRange { name: 'browser-sync-webpack-plugin',
+146 silly addNameRange   range: '>=1.2.0-0 <2.0.0-0',
+146 silly addNameRange   hasData: false }
+147 silly addNameRange { name: 'html-webpack-plugin',
+147 silly addNameRange   range: '>=2.30.1-0 <3.0.0-0',
+147 silly addNameRange   hasData: false }
+148 silly addNameRange { name: 'awesome-typescript-loader',
+148 silly addNameRange   range: '>=3.4.1-0 <4.0.0-0',
+148 silly addNameRange   hasData: false }
+149 silly lockFile 546c11b6-abel-preset-es2017-7-0-0-beta-42 babel/preset-es2017@^7.0.0-beta.42
+150 verbose lock babel/preset-es2017@^7.0.0-beta.42 /home/pontus/.npm/546c11b6-abel-preset-es2017-7-0-0-beta-42.lock
+151 verbose url raw babel/preset-stage-3
+152 verbose url resolving [ 'https://registry.npmjs.org/', './babel/preset-stage-3' ]
+153 verbose url resolved https://registry.npmjs.org/babel/preset-stage-3
+154 info trying registry request attempt 1 at 16:44:26
+155 http GET https://registry.npmjs.org/babel/preset-stage-3
+156 verbose url raw babel/preset-typescript
+157 verbose url resolving [ 'https://registry.npmjs.org/', './babel/preset-typescript' ]
+158 verbose url resolved https://registry.npmjs.org/babel/preset-typescript
+159 info trying registry request attempt 1 at 16:44:26
+160 http GET https://registry.npmjs.org/babel/preset-typescript
+161 verbose url raw browser-sync
+162 verbose url resolving [ 'https://registry.npmjs.org/', './browser-sync' ]
+163 verbose url resolved https://registry.npmjs.org/browser-sync
+164 info trying registry request attempt 1 at 16:44:26
+165 http GET https://registry.npmjs.org/browser-sync
+166 verbose url raw browser-sync-webpack-plugin
+167 verbose url resolving [ 'https://registry.npmjs.org/',
+167 verbose url resolving   './browser-sync-webpack-plugin' ]
+168 verbose url resolved https://registry.npmjs.org/browser-sync-webpack-plugin
+169 info trying registry request attempt 1 at 16:44:26
+170 http GET https://registry.npmjs.org/browser-sync-webpack-plugin
+171 verbose url raw html-webpack-plugin
+172 verbose url resolving [ 'https://registry.npmjs.org/', './html-webpack-plugin' ]
+173 verbose url resolved https://registry.npmjs.org/html-webpack-plugin
+174 info trying registry request attempt 1 at 16:44:26
+175 http GET https://registry.npmjs.org/html-webpack-plugin
+176 verbose url raw awesome-typescript-loader
+177 verbose url resolving [ 'https://registry.npmjs.org/', './awesome-typescript-loader' ]
+178 verbose url resolved https://registry.npmjs.org/awesome-typescript-loader
+179 info trying registry request attempt 1 at 16:44:26
+180 http GET https://registry.npmjs.org/awesome-typescript-loader
+181 silly addNameRange { name: 'raw-loader',
+181 silly addNameRange   range: '>=0.5.1-0 <0.6.0-0',
+181 silly addNameRange   hasData: false }
+182 verbose url raw babel-loader/8.0.0-beta.2
+183 verbose url resolving [ 'https://registry.npmjs.org/', './babel-loader/8.0.0-beta.2' ]
+184 verbose url resolved https://registry.npmjs.org/babel-loader/8.0.0-beta.2
+185 info trying registry request attempt 1 at 16:44:26
+186 http GET https://registry.npmjs.org/babel-loader/8.0.0-beta.2
+187 silly addNameRange { name: 'typescript',
+187 silly addNameRange   range: '>=2.7.2-0 <3.0.0-0',
+187 silly addNameRange   hasData: false }
+188 silly addNameRange { name: 'babel/core',
+188 silly addNameRange   range: '>=7.0.0-beta.42 <8.0.0-0',
+188 silly addNameRange   hasData: false }
+189 silly addNameRange { name: 'babel/polyfill',
+189 silly addNameRange   range: '>=7.0.0-beta.42 <8.0.0-0',
+189 silly addNameRange   hasData: false }
+190 verbose url raw raw-loader
+191 verbose url resolving [ 'https://registry.npmjs.org/', './raw-loader' ]
+192 verbose url resolved https://registry.npmjs.org/raw-loader
+193 info trying registry request attempt 1 at 16:44:26
+194 http GET https://registry.npmjs.org/raw-loader
+195 verbose url raw typescript
+196 verbose url resolving [ 'https://registry.npmjs.org/', './typescript' ]
+197 verbose url resolved https://registry.npmjs.org/typescript
+198 info trying registry request attempt 1 at 16:44:26
+199 http GET https://registry.npmjs.org/typescript
+200 verbose url raw webpack/3.11.0
+201 verbose url resolving [ 'https://registry.npmjs.org/', './webpack/3.11.0' ]
+202 verbose url resolved https://registry.npmjs.org/webpack/3.11.0
+203 info trying registry request attempt 1 at 16:44:26
+204 http GET https://registry.npmjs.org/webpack/3.11.0
+205 silly lockFile 615ae11a-babel-preset-env-7-0-0-beta-42 babel/preset-env@^7.0.0-beta.42
+206 verbose lock babel/preset-env@^7.0.0-beta.42 /home/pontus/.npm/615ae11a-babel-preset-env-7-0-0-beta-42.lock
+207 verbose url raw babel/core
+208 verbose url resolving [ 'https://registry.npmjs.org/', './babel/core' ]
+209 verbose url resolved https://registry.npmjs.org/babel/core
+210 info trying registry request attempt 1 at 16:44:26
+211 http GET https://registry.npmjs.org/babel/core
+212 verbose url raw babel/polyfill
+213 verbose url resolving [ 'https://registry.npmjs.org/', './babel/polyfill' ]
+214 verbose url resolved https://registry.npmjs.org/babel/polyfill
+215 info trying registry request attempt 1 at 16:44:26
+216 http GET https://registry.npmjs.org/babel/polyfill
+217 silly addNameRange { name: 'babel/preset-es2017',
+217 silly addNameRange   range: '>=7.0.0-beta.42 <8.0.0-0',
+217 silly addNameRange   hasData: false }
+218 verbose url raw babel/preset-es2017
+219 verbose url resolving [ 'https://registry.npmjs.org/', './babel/preset-es2017' ]
+220 verbose url resolved https://registry.npmjs.org/babel/preset-es2017
+221 info trying registry request attempt 1 at 16:44:26
+222 http GET https://registry.npmjs.org/babel/preset-es2017
+223 silly addNameRange { name: 'babel/preset-env',
+223 silly addNameRange   range: '>=7.0.0-beta.42 <8.0.0-0',
+223 silly addNameRange   hasData: false }
+224 verbose url raw babel/preset-env
+225 verbose url resolving [ 'https://registry.npmjs.org/', './babel/preset-env' ]
+226 verbose url resolved https://registry.npmjs.org/babel/preset-env
+227 info trying registry request attempt 1 at 16:44:26
+228 http GET https://registry.npmjs.org/babel/preset-env
+229 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+230 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+231 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+232 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+233 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+234 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+235 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+236 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+237 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+238 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+239 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+240 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+241 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+242 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+243 info trying registry request attempt 2 at 16:44:36
+244 http GET https://registry.npmjs.org/babel/preset-stage-3
+245 info trying registry request attempt 2 at 16:44:36
+246 http GET https://registry.npmjs.org/babel/preset-typescript
+247 info trying registry request attempt 2 at 16:44:36
+248 http GET https://registry.npmjs.org/browser-sync
+249 info trying registry request attempt 2 at 16:44:36
+250 http GET https://registry.npmjs.org/browser-sync-webpack-plugin
+251 info trying registry request attempt 2 at 16:44:36
+252 http GET https://registry.npmjs.org/html-webpack-plugin
+253 info trying registry request attempt 2 at 16:44:36
+254 http GET https://registry.npmjs.org/awesome-typescript-loader
+255 info trying registry request attempt 2 at 16:44:36
+256 http GET https://registry.npmjs.org/babel-loader/8.0.0-beta.2
+257 info trying registry request attempt 2 at 16:44:36
+258 http GET https://registry.npmjs.org/typescript
+259 info trying registry request attempt 2 at 16:44:36
+260 http GET https://registry.npmjs.org/webpack/3.11.0
+261 info trying registry request attempt 2 at 16:44:36
+262 http GET https://registry.npmjs.org/raw-loader
+263 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+264 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+265 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+266 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+267 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+268 info trying registry request attempt 2 at 16:44:36
+269 http GET https://registry.npmjs.org/babel/core
+270 info trying registry request attempt 2 at 16:44:36
+271 http GET https://registry.npmjs.org/babel/polyfill
+272 info trying registry request attempt 2 at 16:44:36
+273 http GET https://registry.npmjs.org/babel/preset-es2017
+274 info trying registry request attempt 2 at 16:44:36
+275 http GET https://registry.npmjs.org/babel/preset-env
+276 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+277 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+278 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+279 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+280 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+281 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+282 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+283 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+284 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+285 info trying registry request attempt 3 at 16:45:36
+286 http GET https://registry.npmjs.org/babel/preset-stage-3
+287 info trying registry request attempt 3 at 16:45:36
+288 http GET https://registry.npmjs.org/babel/preset-typescript
+289 info trying registry request attempt 3 at 16:45:36
+290 http GET https://registry.npmjs.org/browser-sync
+291 info trying registry request attempt 3 at 16:45:36
+292 http GET https://registry.npmjs.org/browser-sync-webpack-plugin
+293 info trying registry request attempt 3 at 16:45:36
+294 http GET https://registry.npmjs.org/html-webpack-plugin
+295 info trying registry request attempt 3 at 16:45:36
+296 http GET https://registry.npmjs.org/awesome-typescript-loader
+297 info trying registry request attempt 3 at 16:45:36
+298 http GET https://registry.npmjs.org/babel-loader/8.0.0-beta.2
+299 info trying registry request attempt 3 at 16:45:36
+300 http GET https://registry.npmjs.org/typescript
+301 info trying registry request attempt 3 at 16:45:36
+302 http GET https://registry.npmjs.org/webpack/3.11.0
+303 info trying registry request attempt 3 at 16:45:36
+304 http GET https://registry.npmjs.org/raw-loader
+305 info trying registry request attempt 3 at 16:45:37
+306 http GET https://registry.npmjs.org/babel/core
+307 info trying registry request attempt 3 at 16:45:37
+308 http GET https://registry.npmjs.org/babel/polyfill
+309 info trying registry request attempt 3 at 16:45:37
+310 http GET https://registry.npmjs.org/babel/preset-es2017
+311 info trying registry request attempt 3 at 16:45:37
+312 http GET https://registry.npmjs.org/babel/preset-env
+313 silly lockFile 5a579bb1-bel-preset-stage-3-7-0-0-beta-42 babel/preset-stage-3@^7.0.0-beta.42
+314 silly lockFile 5a579bb1-bel-preset-stage-3-7-0-0-beta-42 babel/preset-stage-3@^7.0.0-beta.42
+315 error Error: CERT_UNTRUSTED
+315 error     at SecurePair.<anonymous> (tls.js:1370:32)
+315 error     at SecurePair.EventEmitter.emit (events.js:92:17)
+315 error     at SecurePair.maybeInitFinished (tls.js:982:10)
+315 error     at CleartextStream.read [as _read] (tls.js:469:13)
+315 error     at CleartextStream.Readable.read (_stream_readable.js:320:10)
+315 error     at EncryptedStream.write [as _write] (tls.js:366:25)
+315 error     at doWrite (_stream_writable.js:223:10)
+315 error     at writeOrBuffer (_stream_writable.js:213:5)
+315 error     at EncryptedStream.Writable.write (_stream_writable.js:180:11)
+315 error     at write (_stream_readable.js:583:24)
+315 error     at flow (_stream_readable.js:592:7)
+315 error     at Socket.pipeOnReadable (_stream_readable.js:624:5)
+316 error If you need help, you may report this log at:
+316 error     <http://github.com/isaacs/npm/issues>
+316 error or email it to:
+316 error     <npm-@googlegroups.com>
+317 error System Linux 4.4.0-17134-Microsoft
+318 error command "/usr/bin/nodejs" "/usr/bin/npm" "install"
+319 error cwd /mnt/c/Projects/cgihackaton
+320 error node -v v0.10.25
+321 error npm -v 1.3.10
+322 verbose exit [ 1, true ]
