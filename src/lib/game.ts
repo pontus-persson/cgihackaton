@@ -9,6 +9,7 @@ class Game {
   socket: any = io();
   player: Triangle = new Triangle({x: 45, y: 45});
   others: object = {};
+  sendTick: boolean = true;
 
   constructor(params) {
     console.log(this.socket);
@@ -53,7 +54,7 @@ class Game {
       this.others[data.user].update();
     });
 
-    window.setInterval(this.update, 1000/30);
+    window.setInterval(this.update, 1000/60);
   }
 
   update = () => {
@@ -63,7 +64,8 @@ class Game {
     if (this.input.isKeyPressed('right')) this.player.turnRight();
 
     this.player.update();
-    this.socket.emit('tick', { x: this.player.pos.x, y: this.player.pos.y, angle: this.player.angle });
+    if(this.sendTick) this.socket.emit('tick', { x: this.player.pos.x, y: this.player.pos.y, angle: this.player.angle });
+    this.sendTick = !this.sendTick;
   }
 
 }
