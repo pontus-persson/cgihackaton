@@ -5,8 +5,9 @@
   "author": "pontus-persson",
   "main": "index.js",
   "scripts": {
-    "start": "webpack",
-    "server": "node src/server/server.js",
+    "start": "node src/server/server.js",
+    "postinstall": "webpack --config webpack.production.config.js",
+    "build": "webpack",
     "dev": "webpack",
     "deploy": "webpack --config webpack.production.config.js",
     "test": "eslint ./src/**/**.js"

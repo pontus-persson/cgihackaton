@@ -6,11 +6,12 @@ import * as io from 'socket.io-client'
 class Game {
   render: Render;
   input: Input = new Input({});
-  socket: any = io('http://localhost:3030');
+  socket: any = io(':3000');
   player: Triangle = new Triangle({x: 45, y: 45});
   others: object = {};
 
   constructor(params) {
+    console.log(this.socket);
     this.render = new Render(params.container);
   }
 

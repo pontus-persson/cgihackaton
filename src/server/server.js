@@ -1,6 +1,9 @@
-const app = require('express')();
+const express = require('express');
+const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http, { origins: '*:*'});
+
+app.use(express.static('public'));
 
 io.on('connection', function(socket) {
   const username = Math.random().toString(36).substring(7);
@@ -21,6 +24,6 @@ io.on('connection', function(socket) {
   });
 });
 
-http.listen(3030, function() {
-  console.log('listening on *:3030');
+http.listen(3000, function() {
+  console.log('listening on *:3000');
 });
