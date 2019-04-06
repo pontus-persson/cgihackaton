@@ -6,7 +6,6 @@ class Render {
   renderCallbacks: any[];
 
   constructor(container) {
-    console.log('constructing render');
     this.containerID = container;
     this.renderCallbacks = [];
   }
@@ -44,7 +43,6 @@ class Render {
 
   // handle resize event
   resize(e) {
-    console.log('resize', e);
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
   }

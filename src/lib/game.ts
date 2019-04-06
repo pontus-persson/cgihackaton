@@ -6,16 +6,12 @@ import * as io from 'socket.io-client'
 class Game {
   render: Render;
   input: Input = new Input({});
-  socket: any;
-  player: Triangle;
+  socket: any = io('http://localhost:3030');
+  player: Triangle = new Triangle({x: 45, y: 45});
   others: object = {};
 
   constructor(params) {
     this.render = new Render(params.container);
-    this.socket = io('http://172.16.1.41:3030');
-    this.player = new Triangle({x: 44, y: 45});
-    console.log(this.socket);
-    window.setInterval(this.update, 1000/60);
   }
 
   init() {
@@ -50,23 +46,23 @@ class Game {
         console.log(`new user ${data.user}`);
         this.others[data.user] = new Triangle(data.pos);
       }
-      this.others[data.user].lastp.x = this.others[data.user].p.x;
-      this.others[data.user].lastp.y = this.others[data.user].p.y;
-      this.others[data.user].p.x = data.pos.x;
-      this.others[data.user].p.y = data.pos.y;
+      this.others[data.user].pos.x = data.pos.x;
+      this.others[data.user].pos.y = data.pos.y;
+      this.others[data.user].angle = data.pos.angle;
       this.others[data.user].update();
     });
 
+    window.setInterval(this.update, 1000/30);
   }
 
   update = () => {
-    if (this.input.isKeyPressed('up')) this.player.vel.y -= 0.04;
-    if (this.input.isKeyPressed('down')) this.player.vel.y += 0.04;
-    if (this.input.isKeyPressed('left')) this.player.vel.x -= 0.04;
-    if (this.input.isKeyPressed('right')) this.player.vel.x += 0.04;
+    if (this.input.isKeyPressed('up')) this.player.accelerate();
+    if (this.input.isKeyPressed('down')) this.player.vel.mul(0.95);
+    if (this.input.isKeyPressed('left')) this.player.turnLeft();
+    if (this.input.isKeyPressed('right')) this.player.turnRight();
 
     this.player.update();
-    this.socket.emit('tick', { x: this.player.p.x, y: this.player.p.y });
+    this.socket.emit('tick', { x: this.player.pos.x, y: this.player.pos.y, angle: this.player.angle });
   }
 
 }

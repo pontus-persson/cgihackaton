@@ -2,7 +2,7 @@ const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http, { origins: '*:*'});
 
-io.on('connection', function(socket){
+io.on('connection', function(socket) {
   const username = Math.random().toString(36).substring(7);
   console.log('a user connected', username);
 
@@ -21,6 +21,6 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(3030, function(){
+http.listen(3030, function() {
   console.log('listening on *:3030');
 });

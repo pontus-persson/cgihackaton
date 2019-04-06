@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack",
+    "server": "node src/server/server.js",
     "dev": "webpack",
     "deploy": "webpack --config webpack.production.config.js",
     "test": "eslint ./src/**/**.js"

@@ -19,7 +19,6 @@ class Input {
   lastmouse: Vec2 = new Vec2(0, 0);
 
   constructor(options) {
-      // Bind all the things
       window.addEventListener('keydown', this.keyDown.bind(this));
       window.addEventListener('keyup', this.keyUp.bind(this));
       window.addEventListener('mousemove', this.mouseMove.bind(this));
@@ -27,17 +26,17 @@ class Input {
       window.addEventListener('mouseup', this.mouseUp.bind(this));
   }
 
-  keyDown(e) { // handle keyboard press down of key
+  keyDown(e) {
       var event = e || window.event;
       this.keysPressed[event.keyCode] = true;
   }
 
-  keyUp(e) { // handles keyboard release of key
+  keyUp(e) {
       var event = e || window.event;
       this.keysPressed[event.keyCode] = false;
   }
 
-  isKeyPressed(key) { // return if specific key is pressed
+  isKeyPressed(key) {
       if (this.keys[key]) {
           return this.keysPressed[this.keys[key]];
       }

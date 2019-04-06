@@ -1,8 +1,13 @@
+interface IVec2 {
+  x: number;
+  y: number;
+}
+
 class Vec2 {
   x: number;
   y: number;
 
-  constructor(x, y) {
+  constructor(x: number = 0, y: number = 0) {
     this.x = x;
     this.y = y;
   }
@@ -14,51 +19,72 @@ class Vec2 {
   set(x, y) {
     this.x = x;
     this.y = y;
+    return this;
   }
 
-  setVec(vec) {
+  setVec(vec: IVec2) {
     this.x = vec.x;
     this.y = vec.y;
+    return this;
   }
 
   add(a) {
     this.x += a;
     this.y += a;
+    return this;
   }
 
-  addVec(vec) {
+  addVec(vec: IVec2) {
     this.x += vec.x;
     this.y += vec.y;
+    return this;
   }
 
   sub(s) {
     this.x -= s;
     this.y -= s;
+    return this;
   }
 
-  subVec(vec) {
+  subVec(vec: IVec2) {
     this.x -= vec.x;
     this.y -= vec.y;
+    return this;
   }
 
   mul(m) {
     this.x *= m;
     this.y *= m;
+    return this;
   }
 
-  mulVec(vec) {
+  mulVec(vec: IVec2) {
     this.x *= vec.x;
     this.y *= vec.y;
+    return this;
   }
 
   div(d) {
     this.x /= d;
     this.y /= d;
+    return this;
   }
 
-  divVec(vec) {
+  divVec(vec: IVec2) {
     this.x /= vec.x;
     this.y /= vec.y;
+    return this;
+  }
+
+  toAngle(radians: boolean = true) {
+    return radians ? Math.atan2(this.y, this.x) : Math.atan2(this.y, this.x)*(180/Math.PI);
+  }
+
+  fromAngle(angle: number, radians: boolean = true) {
+    angle = radians ? angle : angle*Math.PI/180;
+    this.x = Math.sin(angle);
+    this.y = Math.cos(angle);
+    return this;
   }
 
   normalize() {
