@@ -6,7 +6,7 @@ import * as io from 'socket.io-client'
 class Game {
   render: Render;
   input: Input = new Input({});
-  socket: any = io(':3000');
+  socket: any = io();
   player: Triangle = new Triangle({x: 45, y: 45});
   others: object = {};
 
