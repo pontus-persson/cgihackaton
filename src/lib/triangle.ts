@@ -18,16 +18,31 @@ class Triangle {
 
   accelerate() {
     const v = new Vec2().fromAngle(this.angle);
-    this.vel.addVec(v.mul(0.5));
+    this.vel.addVec(v.mul(0.3));
     this.vel.limit(5);
   }
 
   turnLeft() {
-    this.angle += 0.04;
+    this.angle += 0.05;
   }
   
   turnRight() {
-    this.angle -= 0.04;
+    this.angle -= 0.05;
+  }
+
+  keepInBound(width: number, height: number) {
+    if (this.pos.x > width) {
+      this.vel.x -= 0.5;
+    }
+    if (this.pos.x < 0) {
+      this.vel.x += 0.5;
+    }
+    if (this.pos.y > height) {
+      this.vel.y -= 0.5;
+    }
+    if (this.pos.y < 0) {
+      this.vel.y += 0.5;
+    }
   }
 
   setPoints() {
@@ -46,6 +61,7 @@ class Triangle {
 
   update() {
     this.pos.addVec(this.vel);
+    this.vel.mul(0.99);
     this.setPoints();
   }
 

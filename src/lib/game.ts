@@ -44,7 +44,7 @@ class Game {
     });
 
     this.socket.on('update', (data) => {
-      if (!this.others[data.user]) {
+      if (typeof this.others[data.user] === 'undefined') {
         console.log(`new user ${data.user}`);
         this.others[data.user] = new Triangle(data.pos);
       }
@@ -62,6 +62,8 @@ class Game {
     if (this.input.isKeyPressed('down')) this.player.vel.mul(0.95);
     if (this.input.isKeyPressed('left')) this.player.turnLeft();
     if (this.input.isKeyPressed('right')) this.player.turnRight();
+
+    this.player.keepInBound(window.innerWidth, window.innerHeight);
 
     this.player.update();
     if(this.sendTick) this.socket.emit('tick', { x: this.player.pos.x, y: this.player.pos.y, angle: this.player.angle });
