@@ -12,7 +12,6 @@ class Game {
   sendTick: boolean = true;
 
   constructor(params) {
-    console.log(this.socket);
     this.render = new Render(params.container);
   }
 
@@ -37,8 +36,8 @@ class Game {
     });
 
     this.socket.on('left', function(data) {
-      if (this.others[data.user]) {
-        console.log(`user left ${data.user}`);
+      console.log(`user left ${data.user}`);
+      if (typeof this.others[data.user] !== 'undefined') {
         delete this.others[data.user];
       }
     });
@@ -58,13 +57,11 @@ class Game {
   }
 
   update = () => {
-    if (this.input.isKeyPressed('up')) this.player.accelerate();
-    if (this.input.isKeyPressed('down')) this.player.vel.mul(0.95);
-    if (this.input.isKeyPressed('left')) this.player.turnLeft();
-    if (this.input.isKeyPressed('right')) this.player.turnRight();
-
+    if (this.input.isKeyPressed('up') || this.input.isKeyPressed('w')) this.player.accelerate();
+    if (this.input.isKeyPressed('down') || this.input.isKeyPressed('s')) this.player.vel.mul(0.95);
+    if (this.input.isKeyPressed('left') || this.input.isKeyPressed('a')) this.player.turnLeft();
+    if (this.input.isKeyPressed('right') || this.input.isKeyPressed('d')) this.player.turnRight();
     this.player.keepInBound(window.innerWidth, window.innerHeight);
-
     this.player.update();
     if(this.sendTick) this.socket.emit('tick', { x: this.player.pos.x, y: this.player.pos.y, angle: this.player.angle });
     this.sendTick = !this.sendTick;

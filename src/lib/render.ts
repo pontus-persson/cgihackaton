@@ -32,8 +32,6 @@ class Render {
       callback();
     });
 
-    this.ctx.strokeRect(0, 0, this.canvas.width, this.canvas.height);
-
     requestAnimationFrame(this.render);
   }
 
